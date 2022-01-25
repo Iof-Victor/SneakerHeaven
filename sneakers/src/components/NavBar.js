@@ -83,6 +83,13 @@ export default function PrimarySearchAppBar() {
   const handleClick= () => {
     history.push("/JordanPage")
   }
+  const handleClickAdidas= () => {
+    history.push("/AdidasPage")
+  }
+
+  const handleClickNike= () => {
+    history.push("/NikePage")
+  }
 
 
   const menuId = "primary-search-account-menu";
@@ -206,6 +213,7 @@ export default function PrimarySearchAppBar() {
                 backgroundColor: "#6EB0D8",
                 marginRight: "400px",
               }}
+              onClick={handleClickNike}
             >
               Nike
             </Button>
@@ -238,6 +246,7 @@ export default function PrimarySearchAppBar() {
                 backgroundColor: "#6EB0D8",
                 marginRight: "570px",
               }}
+              onClick={handleClickAdidas}
             >
               Adidas
             </Button>

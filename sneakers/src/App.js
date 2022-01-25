@@ -6,7 +6,8 @@ import Register from "./components/Register";
 import React from "react";
 import {AuthContext} from "./context/authcontext";
 import JordanPage from "./pages/JordanPage";
-
+import AdidasPage from "./pages/AdidasPage";
+import NikePage from "./pages/NikePage";
 function App() {
   const [user, setUser] = React.useState(null);
   React.useEffect(() => {
@@ -26,6 +27,8 @@ function App() {
           <Route exact path="/register" component={Register} />
           <Route exact path="/Adminpage" component={Adminpage} />
           <Route exact path="/Jordanpage" component={JordanPage} />
+          <Route exact path="/AdidasPage" component={AdidasPage} />
+          <Route exact path="/Nikepage" component={NikePage} />
         </Switch>
       </Router>
     </AuthContext.Provider>
